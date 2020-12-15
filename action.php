@@ -17,7 +17,7 @@ if (isset($_POST['MaHoaFrom'])){
 	echo "<br>";
 	echo 'Thời Gian Mã Hóa là: '.$aValues[0];
 	echo "<br>";
-	echo "<a href='http://127.0.0.1/MatMa1/'><button class=\"ui button\"  type=\"submit\" style='margin-top: 20px;'>Về Trang 
+	echo "<a href='http://127.0.0.1/BTMatMa'><button class=\"ui button\"  type=\"submit\" style='margin-top: 20px;'>Về Trang 
 	Home</button></a>";
 }
 if (isset($_POST['GiaiMaFrom'])){
@@ -34,7 +34,7 @@ if (isset($_POST['GiaiMaFrom'])){
 	echo "<br>";
 	echo 'Thời Gian Giải Mã là: '.$aValues[0];
 	echo "<br>";
-	echo "<a href='http://127.0.0.1/MatMa1/'><button class=\"ui button\"  type=\"submit\" style='margin-top: 20px;'>Về Trang 
+	echo "<a href='http://127.0.0.1/BTMatMa'><button class=\"ui button\"  type=\"submit\" style='margin-top: 20px;'>Về Trang 
 	Home</button></a>";
 }
 ?>
