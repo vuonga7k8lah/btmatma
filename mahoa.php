@@ -5,10 +5,6 @@
         <input type="text" name="MaHoa" placeholder="Nhập Chuỗi Ký Tự Vào" required>
     </div>
     <div class="field">
-        <label>Nhập Mã IV</label>
-        <input type="text" name="IV" required placeholder="Nhập Mã IV">
-    </div>
-    <div class="field">
         <label>Nhập Mã Key</label>
         <input type="text" name="KEY" required placeholder="Nhập Mã KEY">
     </div>
