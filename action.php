@@ -5,11 +5,12 @@ $a= new aes;
 if (isset($_POST['MaHoaFrom'])){
 // Start loop
 	$data['string'] = $_POST['MaHoa'];
-	$data['KEY'] = substr(sha1($_POST['KEY'],false),0,16);
+	$data['KEY'] = $_POST['KEY'];
+	$data['Loai']=$_POST['Loai'];
 
 
 // End the clock time in seconds
-	$aValues=$a->encode($data['string'],$data['KEY']);
+	$aValues=$a->encode($data['string'],$data['KEY'],$data['Loai']);
 	echo 'Chuỗi Ký Tự Nhập Vào Là: '.$data['string'];
 	echo "<br>";
 	echo 'Chuỗi Ký Tự Đã Mã Hóa Là: '.$aValues[1];
@@ -20,12 +21,14 @@ if (isset($_POST['MaHoaFrom'])){
 	Home</button></a>";
 }
 if (isset($_POST['GiaiMaFrom'])){
+
 	$data['string'] = $_POST['GiaiMa'];
-	$data['KEY'] = substr(sha1($_POST['KEY'],false),0,16);
+	$data['KEY'] = $_POST['KEY'];
+	$data['Loai']=$_POST['Loai'];
 
 
 // End the clock time in seconds
-	$aValues=$a->decode($data['string'],$data['KEY']);
+	$aValues=$a->decode($data['string'],$data['KEY'],$data['Loai']);
 	echo 'Chuỗi Ký Tự Nhập Vào Là: '.$data['string'];
 	echo "<br>";
 	echo 'Chuỗi Ký Tự Giải Mã Là: '.$aValues[1];
